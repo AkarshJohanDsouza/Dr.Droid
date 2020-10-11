@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/drdroidlogo"
+        android:id="@+id/logo"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/logo"
+        android:hint="Email Address"
+        android:padding="10dp"
+        app:met_baseColor="@color/cpb_blue"
+        app:met_primaryColor="@color/cpb_blue"
+        app:met_errorColor="#ddaa00"
+        app:met_floatingLabel="highlight"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/email"
+        android:hint="Password"
+        android:padding="10dp"
+        app:met_baseColor="@color/cpb_blue"
+        app:met_primaryColor="@color/cpb_blue"
+        app:met_errorColor="#ddaa00"
+        app:met_floatingLabel="highlight"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true" />
+
+    <com.rey.material.widget.Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/cpb_blue"
+        android:text="SUBMIT"
+        android:padding="10dp"
+        android:layout_below="@+id/password"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a user yet?"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        style="@style/HyperLink"/>
+
+</RelativeLayout>
